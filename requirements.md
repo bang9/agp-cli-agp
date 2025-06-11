@@ -43,6 +43,11 @@ This file contains project-specific user preferences, coding standards, and beha
 - Use proper error handling and logging
 - **Use pnpm for package management** - NOT npm or yarn
 
+### Code Formatting
+- **Always run prettier before committing** - `pnpm run format`
+- All TypeScript files must be formatted with Prettier
+- Use project's prettier configuration (default settings)
+
 ### Logging Standards
 - **ALWAYS use `logger` instead of `console.log`**
 - Import logger from `../utils/logger` or `./utils/logger` in all files
@@ -53,6 +58,13 @@ This file contains project-specific user preferences, coding standards, and beha
   - `logger.warning()` for warnings
   - `logger.step()` for step-by-step instructions
   - `logger.debug()` for verbose/debug information
+
+### Git Workflow Specifics
+- **When user says "commit and push"**: Execute BOTH operations:
+  1. Project root: `git add . && git commit && git push`
+  2. AGP push: `pnpm dev push` (handles .agp directory separately)
+- Always check working directory before git operations
+- AGP push and main project push are separate and both required
 
 ## Project-Specific Rules
 
@@ -65,4 +77,4 @@ This file contains project-specific user preferences, coding standards, and beha
 ---
 
 **Last Updated**: 2025-06-12  
-**Version**: 1.2
+**Version**: 1.3
