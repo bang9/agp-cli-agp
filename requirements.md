@@ -41,6 +41,7 @@ This file contains project-specific user preferences, coding standards, and beha
 - Use TypeScript for all CLI development
 - Use Commander.js for CLI framework
 - Use proper error handling and logging
+- **Use pnpm for package management** - NOT npm or yarn
 
 ## Project-Specific Rules
 
@@ -52,5 +53,5 @@ This file contains project-specific user preferences, coding standards, and beha
 
 ---
 
-**Last Updated**: 2025-01-12  
-**Version**: 1.0
+**Last Updated**: 2025-06-12  
+**Version**: 1.1

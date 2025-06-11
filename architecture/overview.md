@@ -7,18 +7,17 @@ This directory contains high-level project architecture and organizational knowl
 - **Feature Organization**: How different features are organized within the codebase
 - **Global Standards**: Project-wide conventions and guidelines
 
-## Architecture Files
+## Auto-Generated Files
+
+These files are automatically created and updated by `agp init`:
 
 ### Core Architecture
-- `architecture-overview.md` - Overall project structure and key architectural decisions
-- `feature-domains.md` - Feature areas and their file locations within the project
+- `project-overview.md` - Overall project structure, detected framework, build tools, and package manager
+- `feature-domains.md` - Feature areas grouped by functionality and their file locations within the project
 
-### Specific Domains
-(Files created as needed based on project complexity)
-
-### Standards & Conventions  
-- `naming-conventions.md` - File, component, and variable naming standards
-- `data-flow.md` - How data flows through the application
+### Additional Files
+Files created as needed based on project complexity:
+- Additional architecture files may be created manually as the project grows
 
 ## Usage Guidelines
 

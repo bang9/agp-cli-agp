@@ -7,17 +7,17 @@ This directory contains reusable patterns, implementation guidelines, and common
 - **Reusable Guidelines**: Best practices that apply to multiple features
 - **Cross-cutting Concerns**: Knowledge that spans multiple domains or components
 
-## Pattern Files
+## Auto-Generated Files
+
+These files are automatically created and updated by `agp init` based on project analysis:
 
 ### Core Patterns
-- `component-patterns.md` - Standard component structure and implementation guidelines
-- `api-patterns.md` - API integration and data fetching standards
+- `code-organization-patterns.md` - Generated when source files are detected (shows languages, directories, file naming)
+- `testing-patterns.md` - Generated when test files are detected
 
-### Feature-Specific Patterns
-(Files created as needed based on project features)
-
-### Development Standards
-(Files created as needed based on project requirements)
+### Additional Files
+Files created as needed based on project analysis and manual additions:
+- Additional pattern files may be created based on detected frameworks and project complexity
 
 ## Usage Guidelines
 
@@ -35,27 +35,27 @@ This directory contains reusable patterns, implementation guidelines, and common
 - Use kebab-case for file names
 - End with `-patterns.md` for implementation patterns
 - End with `-guidelines.md` for process or quality guidelines
-- Use descriptive names that clearly indicate the pattern scope
+- Use descriptive names that clearly indicate the CLI pattern scope
 
 ## Pattern Categories
 
-### Implementation Patterns
-Files that show how to implement specific types of functionality
-- Code structure and organization
-- Common component patterns
-- API integration approaches
+### CLI Implementation Patterns
+Files that show how to implement specific CLI functionality
+- Command structure and organization using Commander.js
+- Utility function patterns for common operations
+- Terminal output and logging patterns
 
 ### Process Guidelines
-Files that describe development processes and quality standards
-- Testing approaches
-- Code review standards
-- Performance optimization guidelines
+Files that describe CLI development processes and quality standards
+- CLI testing approaches with proper mocking
+- Code review standards for CLI applications
+- Performance optimization for CLI tools
 
-### Best Practices
-Files that capture project-specific best practices and lessons learned
-- Common pitfalls and how to avoid them
-- Optimization techniques
-- Security considerations
+### CLI Best Practices
+Files that capture CLI-specific best practices and lessons learned
+- Common CLI pitfalls and how to avoid them
+- Terminal UX optimization techniques
+- Cross-platform compatibility considerations
 
 ## Maintenance Notes
 - Keep this overview updated when adding new files to the patterns directory
