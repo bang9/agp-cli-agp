@@ -1,23 +1,27 @@
 # cli.ts
 
 ## Purpose
-- Other file in typescript
-- Auto-generated knowledge file - update with specific implementation details
+- Main CLI entry point for the AGP system
+- Sets up Commander.js program with all available commands
+- Handles command line argument parsing and routing
 
-## Dependencies
-- **Input**: (Files this depends on)
-- **Output**: (Files that depend on this)
-- **External**: (Third-party libraries)
+## Dependencies  
+- **Input**: Command modules from ./commands/ directory
+- **Output**: Executable CLI program via bin configuration
+- **External**: Commander.js@14.0.0
 
 ## Context
-- Located in `src`
-- Type: other
-- Language: typescript
+- Entry point defined in package.json bin field as "agp"
+- Registers all sub-commands (init, start, push, connect)
+- Provides help and version information
+- Used by end users after global npm installation
 
 ## Gotchas
-- (Add specific gotchas after implementation)
+- Simple program.parse() for clean help/version output
+- No custom error handling to avoid "Error:" messages in help
+- Removed link command (no longer supported)
+- Clean exit without additional error logging
 
 ## Related
-- **Patterns**: .agp/patterns/other-patterns.md
-- **Architecture**: .agp/architecture/feature-domains.md
-- **Similar**: (Add links to similar files)
+- **Architecture**: .agp/architecture/cli-structure.md
+- **Similar**: Command files in src/commands/ directory
