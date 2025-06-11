@@ -22,6 +22,8 @@
 - [x] Fix TypeScript compilation errors in project-analyzer (priority: high)
 - [x] Group related operations into spinners for cleaner output (priority: high)
 - [x] Apply spinner to agp push command (priority: high)
+- [ ] Completely simplify all command outputs to single spinner per command (priority: high)
+- [ ] Fix spinner animation to actually rotate properly (priority: high)
 
 ## Blocked
 (No blocked tasks)
