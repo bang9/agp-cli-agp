@@ -16,10 +16,10 @@
 - Manages Git submodule configuration with user prompts
 
 ## Gotchas
-- Complex submodule initialization with retry logic
+- Complex submodule initialization with retry logic (retains user interaction)
 - Process.chdir() changes working directory - must handle cleanup
-- Handles existing repository conflicts with user choices
-- Output messages simplified for clean user experience
+- Uses withSpinner for grouped operations but keeps submodule setup separate for user prompts
+- Operations grouped into logical spinners: "Setting up AGP structure" and "Finalizing setup"
 
 ## Related
 - **Architecture**: .agp/architecture/feature-domains.md

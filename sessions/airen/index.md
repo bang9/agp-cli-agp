@@ -1,7 +1,7 @@
 # airen - Current Session
 
 ## Active Files
-- Multiple utils files (editing since 05:25) - Final cleanup of remaining verbose messages
+- src/utils/agp-init.ts (editing since 05:30) - Group operations into spinners for cleaner output
 
 ## In Progress
 - [x] CLI 배포 프로세스 설명 및 실행 (priority: high)
@@ -20,6 +20,8 @@
 - [x] Clean up agp connect command output messages (priority: medium)
 - [x] Remove all emojis from logger and clean up verbose messages (priority: high)
 - [x] Fix TypeScript compilation errors in project-analyzer (priority: high)
+- [x] Group related operations into spinners for cleaner output (priority: high)
+- [x] Apply spinner to agp push command (priority: high)
 
 ## Blocked
 (No blocked tasks)
