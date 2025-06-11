@@ -1,25 +1,25 @@
 # logger.ts
 
 ## Purpose
-- Clean, emoji-free logging utility for CLI output
-- Provides consistent formatting with minimal ASCII symbols
-- Supports clear progress indicators without visual clutter
+- Clean logging utility with ora-powered spinners for CLI output
+- Provides consistent formatting with professional spinner animations
+- Handles success/error states with proper visual feedback
 
 ## Dependencies
 - **Input**: LoggerOptions for configuration
-- **Output**: Formatted console output with ASCII symbols
-- **External**: chalk for colors
+- **Output**: Formatted console output with ora spinners
+- **External**: chalk for colors, ora for spinner animations
 
 ## Context
 - Core utility for all CLI output across AGP commands
-- Recently refactored to remove excessive emojis and verbose formatting
-- Provides professional, clean terminal output
+- Uses ora library for reliable, non-blocking spinner animations
+- Provides withSpinner method for long-running operations
 
 ## Gotchas
+- ora handles spinner animation automatically without blocking execSync
+- withSpinner wraps operations and shows succeed/fail states
 - Uses simple ASCII symbols: ✓ for success, ✗ for error, → for steps
-- Progress uses spinner character ⠋ for minimal visual feedback
-- All emoji-heavy formatting has been removed for cleaner UX
-- clearProgress() essential for inline progress updates
+- ora spinners work properly even with synchronous child processes
 
 ## Related
 - **Patterns**: .agp/patterns/code-organization-patterns.md
