@@ -1,7 +1,7 @@
 # airen - Current Session
 
 ## Active Files
-- src/cli.ts (editing) - Fixed Commander.js error handling for help/version commands
+- package.json (editing since 05:12) - Updated version to 0.1.3
 
 ## In Progress
 - [x] CLI 배포 프로세스 설명 및 실행 (priority: high)
