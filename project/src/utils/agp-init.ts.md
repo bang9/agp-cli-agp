@@ -1,23 +1,26 @@
 # agp-init.ts
 
 ## Purpose
-- Util file in typescript
-- Auto-generated knowledge file - update with specific implementation details
+- Initializes AGP system with clean, user-friendly output
+- Sets up .agp directory structure, Git submodule, and project analysis
+- Handles template download and repository configuration
 
 ## Dependencies
-- **Input**: (Files this depends on)
-- **Output**: (Files that depend on this)
-- **External**: (Third-party libraries)
+- **Input**: project-detector.ts, template-manager.ts, project-analyzer.ts, logger.ts
+- **Output**: Used by init command in commands/init.ts
+- **External**: fs-extra, inquirer, child_process
 
 ## Context
-- Located in `src/utils`
-- Type: util
-- Language: typescript
+- Core AGP initialization logic
+- Handles both new setups and existing repository merging
+- Manages Git submodule configuration with user prompts
 
 ## Gotchas
-- (Add specific gotchas after implementation)
+- Complex submodule initialization with retry logic
+- Process.chdir() changes working directory - must handle cleanup
+- Handles existing repository conflicts with user choices
+- Output messages simplified for clean user experience
 
 ## Related
-- **Patterns**: .agp/patterns/util-patterns.md
 - **Architecture**: .agp/architecture/feature-domains.md
-- **Similar**: (Add links to similar files)
+- **Similar**: .agp/project/src/utils/agp-start.ts.md, .agp/project/src/utils/agp-push.ts.md

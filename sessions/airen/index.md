@@ -1,7 +1,7 @@
 # airen - Current Session
 
 ## Active Files
-- package.json (editing since 05:12) - Updated version to 0.1.3
+- Multiple utils files (editing since 05:20) - Cleaned up all AGP command output messages
 
 ## In Progress
 - [x] CLI 배포 프로세스 설명 및 실행 (priority: high)
@@ -12,6 +12,12 @@
 - [x] 빌드 테스트 및 CLI 동작 확인
 - [x] 모든 명령어 동작 테스트 (init, start, push, connect)
 - [x] CLI help/version 에러 메시지 수정 및 v0.1.1 배포
+- [x] Update package.json version to 0.1.5 and publish to NPM (priority: high)
+- [x] Clean up AGP init output messages and formatting (priority: high)
+- [x] Update Next steps to explain agp start, agp connect, agp push commands (priority: medium)
+- [x] Clean up agp start command output messages (priority: high)
+- [x] Clean up agp push command output messages (priority: high)
+- [x] Clean up agp connect command output messages (priority: medium)
 
 ## Blocked
 (No blocked tasks)
