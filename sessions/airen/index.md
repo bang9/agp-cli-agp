@@ -18,6 +18,9 @@
 - [x] Synchronize src project knowledge files to match current codebase
 - [x] Fix init command to handle cloned projects with empty .agp directories
 - [x] Add system override instructions to CLAUDE.md generation to prevent AGP workflow violations
+- [x] Replace all console.log with logger calls across the codebase
+- [x] Add logging standards to requirements.md
+- [x] Enhance instructions.md with requirements update process
 
 ## Blocked
 (No blocked tasks)

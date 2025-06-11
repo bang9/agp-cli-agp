@@ -43,6 +43,17 @@ This file contains project-specific user preferences, coding standards, and beha
 - Use proper error handling and logging
 - **Use pnpm for package management** - NOT npm or yarn
 
+### Logging Standards
+- **ALWAYS use `logger` instead of `console.log`**
+- Import logger from `../utils/logger` or `./utils/logger` in all files
+- Use appropriate logger methods:
+  - `logger.info()` for informational messages
+  - `logger.success()` for success messages
+  - `logger.error()` for error messages
+  - `logger.warning()` for warnings
+  - `logger.step()` for step-by-step instructions
+  - `logger.debug()` for verbose/debug information
+
 ## Project-Specific Rules
 
 ### AGP System
@@ -54,4 +65,4 @@ This file contains project-specific user preferences, coding standards, and beha
 ---
 
 **Last Updated**: 2025-06-12  
-**Version**: 1.1
+**Version**: 1.2
