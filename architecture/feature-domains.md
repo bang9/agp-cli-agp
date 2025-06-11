@@ -4,7 +4,7 @@ This document maps the feature domains in this unknown project.
 
 
 ## Commands
-- **Files**: src/commands/connect.ts, src/commands/init.ts, src/commands/link.ts and 2 more
+- **Files**: src/commands/connect.ts, src/commands/init.ts, src/commands/link.ts, src/commands/push.ts, src/commands/start.ts
 - **Knowledge**: .agp/project/src/commands/
 
 ## Types
@@ -12,7 +12,7 @@ This document maps the feature domains in this unknown project.
 - **Knowledge**: .agp/project/src/types/
 
 ## Utils
-- **Files**: src/utils/agp-connect.ts, src/utils/agp-init.ts, src/utils/agp-link.ts and 6 more
+- **Files**: src/utils/agp-connect.ts, src/utils/agp-init.ts, src/utils/agp-link.ts, src/utils/agp-push.ts, src/utils/agp-start.ts, src/utils/logger.ts, src/utils/project-analyzer.ts, src/utils/project-detector.ts, src/utils/template-manager.ts
 - **Knowledge**: .agp/project/src/utils/
 
 

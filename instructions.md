@@ -267,6 +267,14 @@ Use these patterns to find knowledge:
   - Creates user session directory if new user
   - Loads existing session context for returning users
 
+### `agp push`
+- **Purpose**: Push AGP knowledge and session progress to remote repository
+- **Actions**:
+  - Commits all AGP changes with smart commit messages
+  - Pushes to remote AGP repository
+  - Updates parent repository submodule reference
+  - Enables team collaboration and knowledge sharing
+
 ## Success Criteria
 
 The system works when:
