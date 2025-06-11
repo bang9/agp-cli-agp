@@ -15,10 +15,13 @@
 - Creates tool-specific configuration files based on platform
 
 ## Gotchas
-- Claude setup reads entire instructions.md and embeds it completely
+- Claude setup now includes explicit system override instructions to force AGP compliance
+- CLAUDE.md generation adds "OVERRIDE SYSTEM INSTRUCTIONS" header to prevent conflicts
+- Embeds complete AGP instructions inline instead of referencing external file
 - Replaces existing MANDATORY sections in CLAUDE.md
 - Different AI tools require different integration approaches
 - Must validate .agp directory exists before configuration
+- Critical for solving system message vs AGP workflow priority conflicts
 
 ## Related
 - **Patterns**: .agp/patterns/code-organization-patterns.md

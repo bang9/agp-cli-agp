@@ -3,7 +3,8 @@
 ## Active Files
 - src/commands/push.ts (completed) - New push command implementation
 - src/utils/agp-push.ts (completed) - Push utility with progress reporting
-- src/utils/agp-connect.ts (updated) - Enhanced with full instructions.md embedding
+- src/utils/agp-connect.ts (editing since 12:00) - Added system override instructions to force AGP compliance
+- src/utils/agp-init.ts (editing since 11:45) - Added submodule pull logic for cloned projects
 - .agp/instructions.md (updated) - Added agp push documentation
 - .agp/architecture/feature-domains.md (updated) - Updated file listings
 - .agp/project/src/**/*.md (synced) - Created missing knowledge files for all source files
@@ -15,6 +16,8 @@
 - [x] Update AGP documentation to reflect new push command
 - [x] Enhance agp connect claude command with detailed AGP workflow integration
 - [x] Synchronize src project knowledge files to match current codebase
+- [x] Fix init command to handle cloned projects with empty .agp directories
+- [x] Add system override instructions to CLAUDE.md generation to prevent AGP workflow violations
 
 ## Blocked
 (No blocked tasks)
